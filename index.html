@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <center>
+        <h1> Talking calculator </h1>
+        <div class="container">
+            
+            <input type="text" placeholder="0" id="display" disabled>
+
+            <div class="buttons_box">
+                    <div class="row1">
+                    <button value="7" onclick="speak('7')">7</button>
+                    <button value="8" onclick="speak('8')">8</button>
+                    <button value="9" onclick="speak('9')">9</button>
+                    <button value="*" class="multiply" onclick="speak('*')">*</button>
+                    </div>
+                    <div class="row2">
+                    <button value="4" onclick="speak('4')">4</button>
+                    <button value="5" onclick="speak('5')">5</button>
+                    <button value="6" onclick="speak('6')">6</button>
+                    <button value="-" class="subtraction" onclick="speak('-')">-</button>
+                    </div>
+                    <div class="row3">
+                        <button value="1" onclick="speak('1')">1</button>
+                        <button value="2" onclick="speak('2')">2</button>
+                        <button value="3" onclick="speak('3')">3</button>
+                        <button value="+" class="addition" onclick="speak('+')">+</button>
+                    </div>
+                    <div class="row4">
+                        <button value="." class="dot" onclick="speak('.')">.</button>
+                        <button value="0" onclick="speak('0')">0</button> 
+                        <button value="%" class="modulo" onclick="speak('%')">%</button>
+                        <button value="/" id="division" onclick="speak('/')">/</button>
+                    
+                    </div>
+                    <div class="row5">
+                        <button value="DEL" class="delete" onclick="display.value =  display.value.toString().slice(0,-1)">DEL</button>
+                        <button value="AC" class="AC" onclick="clearDisplay()">AC</button>
+                        <button value="=" class="equal" onclick="calculate()">=</button>
+                    </div>
+            </div>
+        </div>
+    </center>
+    <script src="./index.js"></script>
+</body>
+</html>
