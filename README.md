@@ -1,5 +1,8 @@
 Open the index.html file in a web browser.
 
+# Live Link
+https://interactive-calculator-app.netlify.app/
+
 ## Usage
 1. Enter a mathematical expression using the provided buttons or by speaking.
 2. Press the "Speak" button to have the calculator read out the entered expression.
